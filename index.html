@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Report | Ashis Gurung</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: #f7fafc;
+        }
+
+        header {
+            background: linear-gradient(135deg, #232f3e 0%, #37475a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .meta-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #718096;
+            margin-bottom: 0.25rem;
+        }
+
+        .meta-item span {
+            font-size: 1rem;
+            color: #2d3748;
+        }
+
+        .summary h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+
+        .summary p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Placement Report</h1>
+        <p>Ashis Gurung &mdash; Operations Engineering Intern, Amazon</p>
+    </header>
+
+    <div class="container">
+        <div class="meta">
+            <div class="meta-item">
+                <strong>Role</strong>
+                <span>Operations Engineering Intern</span>
+            </div>
+            <div class="meta-item">
+                <strong>Company</strong>
+                <span>Amazon</span>
+            </div>
+            <div class="meta-item">
+                <strong>Duration</strong>
+                <span>April &ndash; September 2026</span>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Project Summary</h2>
+
+            <p>During my six-month placement with Amazon's Operations Engineering team, I had the opportunity to work on a project that sat at the intersection of artificial intelligence, industrial hardware, and real-world logistics. My primary focus was designing and deploying an AI-powered camera system to detect waste jams inside one of Amazon's fulfilment centres.</p>
+
+            <p>Fulfilment centres process millions of items every day, and the conveyor systems that move packages through the building occasionally experience blockages caused by waste material such as loose packaging, tape, or cardboard off-cuts. When these jams occur, they can slow down operations, require manual intervention, and in some cases bring sections of the conveyor network to a halt. The challenge I was tasked with solving was: how can we detect these jams automatically, in real time, so that teams can respond before they escalate?</p>
+
+            <p>The solution centred on the SICK Inspector 83x, an industrial smart camera with built-in machine learning capabilities. Rather than relying on a separate computer to process images, this camera runs its own detection models directly on the device, making it fast and reliable in a factory environment. My role involved training the camera's onboard AI to recognise the visual signatures of waste build-up at key points along the conveyor system. I collected image data from the live environment, labelled examples of normal operation and jam conditions, and iteratively refined the model until it could reliably distinguish between the two.</p>
+
+            <p>Beyond the camera itself, I integrated the system with the fulfilment centre's existing control infrastructure. This meant writing software that allowed the camera to communicate its findings to programmable logic controllers, the industrial computers that govern conveyor behaviour. When a jam was detected, the system could trigger alerts to maintenance teams or take predefined actions to prevent further disruption. Getting this communication layer right required careful coordination between the camera's software environment and the broader control architecture of the building.</p>
+
+            <p>Alongside the technical delivery, I was also involved in aspects of project management. This included planning timelines, coordinating with stakeholders across engineering and operations, presenting progress updates, and ensuring the project stayed aligned with broader site objectives. This experience gave me valuable insight into how technical projects are delivered within a large organisation, where clear communication and structured planning are just as important as the engineering work itself.</p>
+
+            <p>Overall, the placement gave me hands-on experience solving a tangible operational problem using modern AI techniques deployed on specialist hardware. I developed skills in machine vision, embedded systems integration, and cross-functional collaboration, all within one of the world's most complex logistics environments.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Ashis Gurung
+    </footer>
+</body>
+</html>
